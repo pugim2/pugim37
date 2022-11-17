@@ -1,0 +1,505 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ ul,
+ li {
+     list-style: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ #wrap {
+     width: 100%
+ }
+
+ #wrap>div {
+     width: 100%;
+     height: 100vh
+ }
+
+ #wrap>div:nth-child(1) {
+     /*background-color: burlywood;*/
+     /* background: url(../main.png) no-repeat 0 0; */
+     background-color: #929EA6;
+ }
+
+ #wrap>div:nth-child(2) {
+     /* background: url(../profile.png) no-repeat 0 0; */
+     background-color: rgb(235, 232, 232);
+ }
+
+ #wrap>div:nth-child(3) {
+     background-color: rgb(229, 167, 167);
+ }
+
+ #wrap>div:nth-child(4) {
+     background-color: rgb(135, 183, 222);
+ }
+
+ #wrap>div:nth-child(5) {
+     background-color: rgb(135, 183, 222);
+ }
+
+ #wrap>div:nth-child(6) {
+     background-color: #929EA6;
+ }
+
+ #wrap>div>div {
+     margin: 0 auto;
+     width: 1500px;
+     height: 100vh;
+     /* background-color:rgba(255, 244, 146, 0.5); */
+ }
+
+ #main {
+     margin: 0 auto;
+     width: 1500px;
+     height: 800px;
+
+ }
+
+ #main .header {
+     width: 100%;
+     height: 120px;
+     /* background-color: #263B40; */
+
+ }
+
+ #main .logo {
+     float: left;
+     margin: 20px 0 0 0;
+     width: 180px;
+     height: 80px;
+     color: #fff;
+ }
+
+ #main .nav {
+     float: right;
+     margin: 50px 0 0 0;
+ }
+
+ #main .nav li {
+     float: left;
+     margin-right: 50px;
+ }
+
+ #main .nav a {
+     font-size: 20px;
+     font-weight: 600;
+     color: #fff;
+ }
+
+ #main .nav li.on a {
+     color: #fff;
+ }
+
+ #main h2 {
+     float: left;
+     width: 100%;
+     margin: 300px 0 0 0;
+     font-size: 50px;
+     text-align: right;
+     padding-right: 100px;
+     box-sizing: border-box;
+     color: #fff;
+ }
+
+ #main p {
+     float: right;
+     margin: 20px 100px 0 0;
+     font-size: 16px;
+     color: #D6CBC2;
+ }
+
+ /* 퀵메뉴 */
+
+ #q_mn {
+     position: absolute;
+     right: 20px;
+     top: 300px;
+     z-index: 9999;
+     width: 120px;
+     height: 200px;
+     border-radius: 6px;
+     border: 1px solid #ccc;
+     background-color: #fff;
+ }
+
+ #q_mn ul.nav {
+     margin: 0 auto;
+     margin-top: 30px;
+     list-style: none;
+     width: 50px;
+ }
+
+ #q_mn ul.nav li {
+     margin-bottom: 10px
+ }
+
+ #q_mn ul.nav li a {
+     color: #929EA6;
+ }
+
+ #q_mn ul.nav li.on a {
+     color: rgb(15, 15, 15);
+ }
+
+ /* 자기소개 */
+ #profile {
+     width: 100%;
+     height: 800px;
+     
+
+
+
+ }
+
+ #profile .in_profile {
+     width: 1500px;
+     height: 800px;
+     display: block;
+     
+
+
+ }
+
+ #profile .pro_header {
+    
+     width: 100%;
+     height: 100px;
+     /* background-color: #716E64; */
+ }
+
+ #profile .pro_header H3 {
+     font-size: 50px;
+     /* margin-top: 20px; */
+ }
+
+ #profile .pro_content {
+    
+    margin-top: 100px;
+     width: 500px;
+     float: left;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+
+ #profile .pro_content ul {
+     width: 100%;
+
+ }
+
+ #profile .pro_1 {
+
+     width: 500px;
+
+
+ }
+
+ #profile .pro_imgbox {
+     width: 400px;
+     height: 400px;
+     background-color: #fff;
+     border: 2px solid #716E64;
+
+ }
+ #profile .pro_imgbox img{
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+ }
+
+ #profile .gruop {
+     width: 500px;
+     height: 400px;
+
+
+
+ }
+
+ #profile .gruop ul {}
+
+
+ #profile .pro_textbox {
+     margin-top: 20px;
+     color: #716E64;
+     display: block;
+     width: 500px;
+
+ }
+
+ #profile .pro_textbox p {
+     font-size: 15px;
+ }
+
+ #profile .pro_textbox .line {
+     margin-top: 20px;
+     border: 2px solid orange;
+ }
+
+ #profile .pro_2 {
+     width: 500px;
+     height: 200px;
+     display: block;
+ }
+
+ #profile .pro_2 h3 {}
+
+ #profile .pro_2 p {
+     margin-bottom: 10px;
+     color: #716E64;
+ }
+
+
+
+
+ /* 스킬 */
+ #skill {
+     width: 100%;
+     height: 800px;
+     /* border: 1px solid #716E64; */
+     display: flex;
+     justify-content: center;
+ }
+
+ #skill .skill_h {
+     margin-right: 300px;
+     font-size: 50px;
+
+ }
+
+ #skill .in_skill {
+     width: 1500px;
+     height: 800px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #skill .skill_list {}
+
+ #skill .skill_list>li {
+     float: left;
+     margin-right: 100px;
+     text-align: center;
+ }
+
+ #skill .skill_list>li>div {
+     /* width: 50px;
+     height: 300px; */
+     width: 300px;
+     height: 50px;
+
+     border: 1px solid #000;
+     position: relative;
+     overflow: hidden;
+     margin-top: 30px;
+ }
+
+ #skill .skill_list>li h5 {
+     font-size: 18px;
+ }
+
+ #skill .skill_list>li>div>.in_box {
+     /* width: 50px;
+     height: 300px; */
+     width: 300px;
+     height: 50px;
+
+     background-color: #929EA6;
+     position: absolute;
+     /* top: 300px;
+     left: 0; */
+     top: 0px;
+     left: 300px;
+ }
+
+ /* 프로젝트 */
+
+
+
+ #project_1 {
+     width: 100%;
+     height: 800px;
+     display: flex;
+     justify-content: center;
+ }
+
+ #project_1 .in_project_1 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #project_1 .pro_header {
+     font-size: 50px;
+     margin-top: -600px;
+
+ }
+
+ #project_1 .list {
+     width: 1200px;
+ }
+
+ #project_1 .list>li {
+     float: left;
+     width: 600px;
+     height: 500px;
+     /* border: 1px solid #000; */
+     box-sizing: border-box;
+
+ }
+
+ #project_1 .output {
+     background: url(../screen.png) no-repeat 0 100px;
+     background-size: 100%;
+
+
+ }
+
+ #project_1 .output>div {
+     width: 500px;
+     height: 270px;
+     /* border: 1px solid #000; */
+     box-sizing: border-box;
+     margin: 250px 0 0 39px;
+
+ }
+
+ #project_1 .account {
+     margin-top: 250px;
+
+
+ }
+
+ #project_1 .account h3 {
+     font-size: 32px;
+     margin-bottom: 50px;
+ }
+
+ #project_1 .account p {
+     font-size: 17px;
+     margin-top: 17px;
+ }
+
+ #project_1 .account a {
+     padding: 10px 10px 10px 10px;
+     font-size: 17px;
+     margin-top: 50px;
+     display: block;
+     border: 1px solid #ccc;
+     float: left;
+
+ }
+
+ /* 프로젝트2 */
+ #project_2 {
+     width: 100%;
+     height: 800px;
+     display: flex;
+     justify-content: center;
+     /* border: 1px solid #333; */
+ }
+
+ #project_2 .in_project_2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #project_2 .pro_header2 {
+     font-size: 50px;
+     margin-top: -600px;
+     opacity: 0;
+
+ }
+
+ #project_2 .list {
+     width: 1200px;
+ }
+
+ #project_2 .list>li {
+     float: left;
+     width: 600px;
+     height: 500px;
+     /* border: 1px solid #000; */
+     box-sizing: border-box;
+ }
+
+ #project_2 .output {
+     background: url(../screen.png) no-repeat 0 100px;
+     background-size: 100%;
+
+
+ }
+
+ #project_2 .output>div {
+     width: 500px;
+     height: 270px;
+     /* border: 1px solid #000; */
+     box-sizing: border-box;
+     margin: 250px 0 0 39px;
+
+ }
+
+ #project_2 .account {
+     margin-top: 250px;
+
+ }
+
+ #project_2 .account h3 {
+     font-size: 32px;
+     margin-bottom: 50px;
+ }
+
+ #project_2 .account p {
+     font-size: 17px;
+     margin-top: 17px;
+ }
+
+ #project_2 .account a {
+     padding: 10px 10px 10px 10px;
+     font-size: 17px;
+     margin-top: 50px;
+     display: block;
+     border: 1px solid #ccc;
+     float: left;
+
+
+ }
+
+ /* 마무리 */
+ #end {
+     width: 100%;
+     height: 600px;
+     /* border: 1px solid #716E64; */
+     display: flex;
+     justify-content: center;
+     background-color: #929EA6;
+ }
+
+ #end .end_header {
+     margin-top: 100px;
+     text-align: center;
+     font-size: 50px;
+
+
+
+ }
+
+ #end .end_1 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #end .end_list {
+     margin-top: 100px;
+ }
+
+ #end .end_2 {}
