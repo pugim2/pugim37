@@ -7,8 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,500&display=swap" rel="stylesheet">
 
+    
+    
+    
     <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
     <script>
         $(function () {
             var menu = $('.nav > li');
@@ -59,6 +68,11 @@
         <!-- 메인 -->
         <div id="main">
             <div class="in_main">
+                
+                <div class='wave -one'></div>
+                <div class='wave -two'></div>
+                <div class='wave -three'></div>
+
                 <div class="header">
                     <h1 class="logo">CHOI</h1>
                     <ul class="nav">
@@ -86,15 +100,16 @@
                 <div class="pro_content">
                     <ul>
                         <li class="pro_1">
+                            <div class="pro_imgb"></div>
                             <div class="pro_imgbox">
-                                <!-- <img src="./images/my.jpg" alt=""> -->
+                                <img src="./images/my2.jpg" alt="">
                             </div>
                         </li>
                     </ul>
                     <div class="group">
                         <ul>
                             <li class="pro_textbox">
-                                <p>Choi In Young</p><br>
+                                <p><b>Choi In Young</b></p><br>
                                 <p>1993.01.27</p><br>
                                 <p>e_mail : big9559@naver.com</p><br>
                                 <p>address : 부산광역시 북구 </p>
@@ -106,11 +121,15 @@
                             <li class="pro_2">
 
                                 <h3>Education</h3><br>
-                                <p>동명대학교 호텔경영학과 졸업</p>
-                                <p>2012~</p>
-                                <p>코리아아이티(IT)아카데미학원</p>
-                                <p>UI/UX기반 프론트엔드 개발자 양성과정B 수료중</p>
-                                <p>2022.09~</p>
+                                <p>동명대학교 호텔경영학과 졸업 (2012~2017)</p>
+                                <br />
+
+                                <p>- 부산IT교육센터</p>
+                                <p>수강명:빅데이터시각화를 통한 빅데이터UI 콘텐츠개발 수료</p>
+                                <p class="pro2_date">훈련기간:(20.09~21.04)</p>
+                                <p>- 코리아아이티(IT)아카데미학원</p>
+                                <p>수강명:UI/UX기반 프론트엔드 개발자 양성과정B 수료</p>
+                                <p class="pro2_date">훈련기간:(22.08~22.12)</p>
 
                             </li>
                         </ul>
@@ -136,23 +155,23 @@
                     <div>
                         <div class="in_box in_box01">80%</div>
                     </div>
-                    <h5>html</h5>
+                    <h5>html/css</h5>
                 </li>
                 <li>
                     <div>
-                        <div class="in_box in_box02">50%</div>
+                        <div class="in_box in_box02">70%</div>
                     </div>
-                    <h5>css</h5>
+                    <h5>js/jquery</h5>
                 </li>
                 <li>
                     <div>
-                        <div class="in_box in_box03">100%</div>
+                        <div class="in_box in_box03">70%</div>
                     </div>
-                    <h5>jquery</h5>
+                    <h5>react</h5>
                 </li>
                 <li>
                     <div>
-                        <div class="in_box in_box04">50%</div>
+                        <div class="in_box in_box04">60%</div>
                     </div>
                     <h5>java</h5>
                 </li>
@@ -164,7 +183,7 @@
                 </li>
                 <li>
                     <div>
-                        <div class="in_box in_box04">50%</div>
+                        <div class="in_box in_box04">60%</div>
                     </div>
                     <h5>spring</h5>
                 </li>
@@ -180,13 +199,13 @@
                     var scrollTop = $(document).scrollTop();
                     if (scrollTop > 1800 && scene01Num == 1) {
                         scene01Num = 0;
-                        $('#skill .in_box01').stop().delay(0).css({ left: '300px' }).animate({ left: '150px' }, 1000);
-                        $('#skill .in_box02').stop().delay(500).css({ left: '300px' }).animate({ left: '30px' }, 1000);
-                        $('#skill .in_box03').stop().delay(1000).css({ left: '300px' }).animate({ left: '120px' }, 1000);
-                        $('#skill .in_box04').stop().delay(1500).css({ left: '300px' }).animate({ left: '100px' }, 1000);
+                        $('#skill .in_box01').stop().delay(0).css({ left: '300px' }).animate({ left: '50px' }, 1000);
+                        $('#skill .in_box02').stop().delay(500).css({ left: '80px' }).animate({ left: '80px' }, 1000);
+                        $('#skill .in_box03').stop().delay(1000).css({ left: '80px' }).animate({ left: '80px' }, 1000);
+                        $('#skill .in_box04').stop().delay(1500).css({ left: '100px' }).animate({ left: '100px' }, 1000);
                         $('#skill .in_box05').stop().delay(2000).css({ left: '300px' }).animate({ left: '100px' }, 1000);
-                        $('#skill .in_box06').stop().delay(2500).css({ left: '300px' }).animate({ left: '100px' }, 1000);
-                        $('#skill .in_box07').stop().delay(3000).css({ left: '300px' }).animate({ left: '100px' }, 1000);
+                        $('#skill .in_box06').stop().delay(2500).css({ left: '300px' }).animate({ left: '200px' }, 1000);
+                        $('#skill .in_box07').stop().delay(3000).css({ left: '100px' }).animate({ left: '100px' }, 1000);
                     }
                     else if (scrollTop < 1500 && scene01Num == 0) {
                         scene01Num = 1;
@@ -209,18 +228,26 @@
     <div id="project_1">
         <div class="in_project_1">
             <div class="pro_header">
-                <h2>project</h2>
+                <h2>PROJECT</h2>
             </div>
             <ul class="list">
                 <li class="output">
-                    <div><img src="./images/monitor.png" width="100%" alt=""></div>
+                    <div><img src="./images/monitor.png" width="100%" alt="" />
+                        <img class="img_p" src="./images/Screenshot_3.png" width="480px" alt="" />
+                    </div>
 
                 </li>
                 <li class="account">
                     <h3>페리오</h3>
-                    <p>작업기간: 2022.10.01 ~ </p>
-                    <p>작업요점: 홈페이지 리뉴얼 </p>
-                    <p>사용기술: </p>
+                    <p><b>작업기간</b>  2022.10.01 ~ </p>
+                    <p><b>작업요점</b>  홈페이지 리뉴얼 </p>
+                    <p><b>사용기술</b>  xd html css js </p>
+                    <p><b>컨셉설명</b>  <br />
+                        사용자가 원하는 메뉴를 한번에 탐색 가능 하도록 제이쿼리를 사용하여 상단
+                        네비게이션 메뉴에 마우스를 올리면 서브메뉴가 나타나도록 구현하였습니다.<br />
+                        메인페이지에 제품추천 및 제품페이지를 구성하여 자연스럽게 제품을 노출시킬수있는 
+                        디자인을 구성했습니다.
+                    </p>
                     <!-- <a href="">코드보기</a> -->
                     <a href="https://pugim2.github.io/perioe/">결과물보기</a>
                 </li>
@@ -236,14 +263,21 @@
             </div>
             <ul class="list">
                 <li class="output">
-                    <div><img src="./images/monitor.png" width="100%" alt=""></div>
+                    <div><img src="./images/monitor.png" width="100%" alt="">
+                        <img class="img_p2" src="./images/Screenshot_2.png" width="480px" alt="" />
+                    </div>
 
                 </li>
                 <li class="account">
                     <h3>세계자연기금</h3>
-                    <p>작업기간: 22.10.13 ~</p>
-                    <p>작업요점: 클론코딩</p>
-                    <p>사용기술:</p>
+                    <p><b>작업기간</b> 22.10.13 ~</p>
+                    <p><b>작업요점</b> 클론코딩</p>
+                    <p><b>사용기술</b> html css </p>
+                    <p><b>컨셉설명</b><br />
+                        세계자연기금 클론코딩 <br />
+                        구성요소 배치에 대한 고민과 해결방안을 찾아 기술을 적용해봄으로써
+                        다른 페이지의 요소들에 적절한 배치가 가능하게 되었습니다   
+                     </p>
                     <!-- <a href="">코드보기</a> -->
                     <a href="https://pugim2.github.io/clone/">결과물보기</a>
                 </li>
@@ -251,31 +285,94 @@
 
         </div>
     </div>
+
+    <!-- 연습용  -->
+    <!-- <div id="contain">
+        <ul>
+            <li>
+              <div class="section-title">
+                <h2>Section 1</h2>
+              </div>
+              <div class="section-content">
+                <p id="tain1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatum temporibus dicta reprehenderit tempore quisquam consequuntur porro omnis laboriosam praesentium at et sapiente, provident sit! Suscipit recusandae, ab ratione dignissimos.</p>
+              </div>
+            </li>
+            <li class="activ">
+              <div class="section-title">
+                <h2>Section 2</h2>
+              </div>
+              <div class="section-content">
+                <p id="tain2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam delectus, eius nostrum aspernatur voluptas enim fugit ipsa magni voluptatem, odio sit accusamus vel id, commodi consequuntur possimus repellat necessitatibus!</p>
+              </div>
+            </li>
+            <li >
+              <div class="section-title">
+                <h2>Section 3</h2>
+              </div>
+              <div class="section-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur saepe vel facilis quae nihil ad aspernatur ex delectus. Tenetur nulla voluptates similique quos, quia possimus, magnam esse natus quis ipsa.</p>
+              </div>
+            </li>
+            <li>
+              <div class="section-title">
+                <h2>Section 4</h2>
+              </div>
+              <div class="section-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, optio illo, delectus deleniti animi accusamus. Laboriosam maiores totam provident aliquam. Unde, incidunt amet officia a obcaecati, ducimus at molestiae nemo.</p>
+              </div>    
+            </li>
+          </ul> -->
+
+
+
     <!-- 마무리 -->
     <div id="end">
         <div class="in_end">
             <div class="end_header">
                 <h2>CONTACT</h2>
             </div>
+
+            <!-- <div class="end_line">
+                <p>|</p>
+            </div> -->
+            <div class="end_t">
+                <p>"항상 열린 마인드로 소통하는 개발자가 되겠습니다"</p>
+            </div>
+
             <div class="end_1">
                 <p></p>
                 <ul class="end_list">
                     <li>
                         <div>
-                            <img src="">
-                            <h4>연락처</h4>
+                            <img src="./images/tel.png" width="30px" alt="">
+                            <h4>TEL</h4>
                             <p>010-1111-2222</p>
                         </div>
                     </li>
                     <li>
                         <div class="end_2">
-                            <img src="">
-                            <h4>카카오톡</h4>
-                            <p>ID:!!!</p>
+                            <img src="./images/kakao.png" width="30px" alt="" />
+                            <h4>KAKAO</h4>
+                            <p>ID:pugim2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="end_3">
+                            <img src="./images/email.png" width="30px" alt="" />
+                            <h4>EMAIL</h4>
+                            <p>pugim2@naver.com</p>
                         </div>
                     </li>
                 </ul>
+
             </div>
+
+            <div class="end_p">
+                <p>
+                    ※본 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었습니다.
+                    일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</p>
+            </div>
+
         </div>
     </div>
     </div>
@@ -285,7 +382,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Skill</a></li>
-            <li><a href="#">project1</a></li>
+            <li><a href="#">project</a></li>
             <li><a href="#">contact</a></li>
         </ul>
     </div>
